@@ -39,7 +39,7 @@
                 data: {'strNumber':$('#strNumber').val()},
                 dataType: 'json',
                 success: function(data){
-                    if(data.status){
+                    if(data.status=='true'){
                         $('.output').html('Total Dashes for the given Number is: '+data.result);
                     }else{
                         $('.output').html(data.msg);
