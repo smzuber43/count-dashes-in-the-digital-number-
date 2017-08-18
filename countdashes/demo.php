@@ -17,12 +17,12 @@ Class countDashes{
                 if(is_numeric($val) && strlen($str)< 100 ){
                 $count_dashes =$count_dashes+$this->dashes[$val];
                 }else{
-                    return json_encode(array('status'=>'FALSE','msg'=>'Please enter only 0-9 degits '));
+                    return json_encode(array('status'=>'false','msg'=>'Please enter only 0-9 degits '));
                 }
             }
-            return json_encode(array('status'=>'TRUE','result'=>$count_dashes));
+            return json_encode(array('status'=>'true','result'=>$count_dashes));
         }else{
-            return json_encode(array('status'=>'FALSE','msg'=>'String length should not more then 100'));
+            return json_encode(array('status'=>'false','msg'=>'String length should not more then 100'));
         }    
     }
 }
